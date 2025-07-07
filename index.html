@@ -10,6 +10,7 @@
         * {
             margin: 0;
             padding: 0;
+            border: none;
             box-sizing: border-box;
         }
         body {
@@ -20,6 +21,13 @@
             background-color: #E065BB;
             height: 100%;
             width: 100%;
+            ul {
+                display: inline-block;
+                list-style: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         
         @media (min-width: 1440px) {
@@ -27,16 +35,16 @@
                 display: grid;
                 gap: 0;
                 grid-template-columns: 1000fr 1618fr;
+                margin: 0 0 250px 0;
             }
-            .intro-photo-container {
-                height: 100vh;
-                img {
-                    overflow: hidden;
-                }
+            .intro-photo-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
             }
             .intro-text-container {
                 height: 100vh;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -48,10 +56,56 @@
                 font-size: 58px;
             }
             .intro-text {
+
                 text-align: justify;
                 width: 61.8%;
                 font-size: 18px;
-            };
+                font-family: Verdana, sans-serif;
+            }
+
+            .topic-name {
+                width: 100%;
+                font-size: 32px;
+                text-align: left;
+                font-family: Verdana, sans-serif;
+            }
+
+            .education-section {
+                display: grid;
+                gap: 0;
+                grid-template-columns: 1618fr 1000fr;
+                height: 800px;
+                padding: 0 0 250px 0;
+            }
+            .self-studying {
+                padding: 0 5% 0 10%;
+
+            }
+            .courses {
+                padding: 0 10% 0 5%;
+            }
+            .educational-resources {
+                display: flex;
+            }
+            .educational-resource a img {
+                border-radius: 50%;
+                width: 170px;
+                object-fit: cover;
+            }
+
+
+            .stack-section {
+                padding: 0 10%;
+                height: 900px;
+                .skills {
+                    display: inline;
+                    .skill img {
+                        display: inline;
+                        width: 170px;
+                    }
+                }
+            }
+
         }
     </style>
 </head>
@@ -72,6 +126,77 @@
                 Kafka et Redis pour construire des systèmes distribués efficaces. Mon approche est
                 toujours orientée vers la qualité du code, la simplicité et la performance.
             </p>
+        </div>
+    </section>
+
+    <section class="education-section">
+        <div class="self-studying">
+            <h3 class="topic-name">self-studying</h3>
+            <ul class="educational-resources">
+                <li class="educational-resource" title="TechWorld with Nana (YouTube)">
+                    <a href="https://www.youtube.com/c/techworldwithnana" target="_blank">
+                        <img src="education-img/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_319175_c5aebaff-6768-4f5e-9c0b-b1eae091ded8.webp" alt="nana">
+                    </a>
+                </li>
+                <li class="educational-resource" title="Joker, JPoint & JUGru (YouTube)">
+                    <a href="https://www.youtube.com/@JUGru" target="_blank">
+                        <img src="education-img/jpoint.jpg">
+                    </a>
+                </li>
+                <li class="educational-resource" title="Kafka Documentation">
+                    <a href="https://kafka.apache.org/documentation/" target="_blank">
+                        <img src="education-img/kafka-logo.png" alt="Kafka documentation">
+                    </a>
+                </li>
+                <li class="educational-resource" style="border-radius: 0">
+                    <a href="https://www.w3schools.com/" target="_blank" style="border-radius: 0">
+                        <img src="education-img/w3s-logo.png" alt="w3s" style="border-radius: 0">
+                    </a>
+                </li>
+                <li class="educational-resource"></li>
+            </ul>
+        </div>
+        <div class="courses">
+            <h3 class="topic-name">courses</h3>
+            <ul class="educational-resources">
+                <li class="educational-resource" title="Karaganda Polytechnic University">
+                    <a href="https://www.kstu.kz">
+                        <img src="education-img/ktu.png" alt="KTU">
+                    </a>
+                </li>
+                <li class="educational-resource" title="Rolling Scopes School">
+                    <a href="https://app.rs.school">
+                        <img src="education-img/rs-logo.png" alt="RSSchool">
+                    </a>
+                </li>
+                <li class="educational-resource"><a href=""><img src="" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="stack-section">
+        <h3 class="topic-name">Stack</h3>
+        <div class="stack-container">
+            <ul class="skills">
+                <li class="skill"><img src="stack-img/java-core.png" alt="Java Core"></li>
+                <li class="skill"><img src="stack-img/spring-boot.png" alt="Spring Boot"></li>
+                <li class="skill"><img src="stack-img/hibernate.png" alt="Hibernate"></li>
+                <li class="skill"><img src="stack-img/redis.png" alt="Redis"></li>
+                <li class="skill"><img src="stack-img/postgresql.png" alt="PostgresSQL"></li>
+                <li class="skill"><img src="stack-img/kafka.png" alt="Kafka"></li>
+                <li class="skill"><img src="stack-img/junit.png" alt="JUnit"></li>
+                <li class="skill"><img src="stack-img/docker.png" alt="Docker"></li>
+                <li class="skill"><img src="stack-img/git.png" alt="Git"></li>
+                <li class="skill"><img src="stack-img/jenkins.png" alt="Jenkins"></li>
+                <li class="skill"><img src="stack-img/linux.png" alt="Linux"></li>
+                <li class="skill"><img src="stack-img/k8s.png" alt="Kubernetes"></li>
+                <li class="skill"><img src="stack-img/html.png" alt="HTML"></li>
+                <li class="skill"><img src="stack-img/css.png" alt="CSS"></li>
+                <li class="skill"><img src="stack-img/js.png" alt="JavaScript"></li>
+            </ul>
+
+
         </div>
     </section>
 
