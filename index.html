@@ -5,8 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RS CV</title>
     <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+        }
+
+        main {
+            background-color: #E065BB;
+            height: 100%;
+            width: 100%;
+        }
+        
+        @media (min-width: 1440px) {
+            .intro-section {
+                display: grid;
+                gap: 0;
+                grid-template-columns: 1000fr 1618fr;
+            }
+            .intro-photo-container {
+                height: 100vh;
+                img {
+                    overflow: hidden;
+                }
+            }
+            .intro-text-container {
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .intro-header {
+                text-align: left;
+                width: 61.8%;
+                font-size: 58px;
+            }
+            .intro-text {
+                text-align: justify;
+                width: 61.8%;
+                font-size: 18px;
+            };
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello</h1>
+<main>
+    <section class="intro-section">
+        <div class="intro-photo-container">
+            <img src="ava.jpg" alt="avatar">
+        </div>
+        <div class="intro-text-container">
+            <h2 class="intro-header">Alexandre Rjanitsyne</h2>
+            <p class="intro-text">Je suis un développeur passionné avec une
+                solide expérience en développement web et mobile. Je maîtrise plusieurs
+                langages de programmation, notamment Java, Kotlin, JavaScript et Python.
+                J’ai une bonne connaissance des frameworks modernes tels que Spring Boot,
+                Vue.js et Jetpack Compose. Je suis à l’aise avec les bases de données relationnelles
+                comme PostgreSQL, et j’ai également de l’expérience dans l’utilisation de Docker,
+                Kafka et Redis pour construire des systèmes distribués efficaces. Mon approche est
+                toujours orientée vers la qualité du code, la simplicité et la performance.
+            </p>
+        </div>
+    </section>
+
+</main>
 </body>
 </html>
