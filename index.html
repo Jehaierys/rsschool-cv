@@ -7,6 +7,8 @@
 <style>
   body {
     width: 100%;
+      display: flex;
+      justify-content: center;
   }
   * {
     margin: 0;
@@ -15,30 +17,106 @@
     box-sizing: border-box;
   }
 
+
   @media (min-width: 1400px) {
-    header {
-      width: 1400px;
-    }
-    main {
-      width: 1400px;
-    }
-    footer {
-      width: 1400px;
-    }
+      main {
+          display: grid;
+          width: 1000px;
+          height: 1414px;
+          grid-template-columns: 38.2% 61.8%;
+          section#left > div {
+              height: 100%;
+              border: 3px solid red;
+          }
+          section#left {
+              display: grid;
+              grid-template-rows: 300px 500px 100px 300px 200px;
+              align-items: center;
+              div#me-intro {
+
+              }
+              div#contacts {
+
+                  ul {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: space-evenly;
+                      align-items: center;
+                      flex-direction: column;
+                      li {
+                          width: 50%;
+                          border: 3px solid red;
+                      }
+                  }
+              }
+              div#education {
+              }
+          }
+      }
+
+      main > section {
+          height: 100%;
+      }
+
+      section#left {
+          background-color: lightcoral;
+      }
+
+      section#right {
+          background-color: lightblue;
+      }
+
   }
 
 </style>
 
 <body>
 <header>
+    <nav>
 
+    </nav>
 </header>
-<main>
 
+<main>
+    <section id="left">
+        <div id="me-intro">
+            <img src="" alt="photo" class="photo">
+            <h1>Orekhov Alexandr</h1>
+        </div>
+        <div id="contacts">
+            <h2>Contacts</h2>
+            <ul>
+                <li>+7 (xxx) xxx ** xx</li>
+                <li>gitl**@gmail.com</li>
+                <li><a href="https://web.telegram.org/" target="_blank">t.me</a></li>
+                <li><a href="https://ru.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://ok.ru/" target="_blank">ok.ru</a></li>
+            </ul>
+        </div>
+        <div id="education">
+            <h2>Education</h2>
+            <p><a href="https://www.kstu.kz/">KTU</a></p>
+        </div>
+        <div id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian C2</li>
+                <li>English B2</li>
+                <li>French A1</li>
+            </ul>
+        </div>
+        <div id="rs-logo">
+
+        </div>
+
+    </section>
+    <section id="right">
+
+    </section>
 </main>
 
 <footer>
-
 </footer>
 </body>
 </html>
