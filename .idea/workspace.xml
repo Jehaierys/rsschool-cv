@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbadc370-a3c2-4e98-b127-386376a7f029" name="Changes" comment="" />
+    <list default="true" id="3cc28146-1538-4283-be49-d7dac6e2b4ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2zXk1iU8IBk0DoCJcoikLEkFt1m" />
+  <component name="ProjectId" id="2ziT5woveeCJHK6yxjNn6hx8J2r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,7 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "rsschool-cv-html",
+    "git-widget-placeholder": "cv-for-printing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -35,8 +45,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/stack-img" />
-      <recent name="$PROJECT_DIR$/education-img" />
+      <recent name="$PROJECT_DIR$/icon" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -49,12 +58,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fbadc370-a3c2-4e98-b127-386376a7f029" name="Changes" comment="" />
-      <created>1751884591555</created>
+      <changelist id="3cc28146-1538-4283-be49-d7dac6e2b4ff" name="Changes" comment="" />
+      <created>1752212715007</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1751884591555</updated>
-      <workItem from="1751884592648" duration="12131000" />
+      <updated>1752212715007</updated>
+      <workItem from="1752212716584" duration="4917000" />
     </task>
     <servers />
   </component>

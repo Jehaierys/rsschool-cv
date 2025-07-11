@@ -3,74 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <title>Orekhov Alexandr CV</title>
+
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: Verdana sans-serif;
+        }
+
+        main > section {
+            height: 100%;
+        }
+
+        main {
+            display: grid;
+            width: 1000px;
+            height: 1414px;
+            grid-template-columns: 38.2% 61.8%;
+            background-color: pink;
+
+            section > div {
+                /*border: 3px solid red;*/
+                width: 80%;
+            }
+            section {
+                height: 100%;
+                padding-top: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                h1 {
+                    margin-top: 10px;
+                }
+
+                h2 {
+                    width: 100%;
+                    font-family: Verdana sans-serif;
+                    margin-bottom: 17px;
+                }
+
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+                    li {
+                        height: 30px;
+                        width: 93%;
+                        margin-left: 7%;
+                    }
+                }
+                div#me-intro {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+                div#rs-logo {
+                    margin-top: auto;
+                    margin-bottom: 25px;
+                }
+                div#skills {
+                    img.star-img {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+
+        section#right {
+            background-color: lightblue;
+        }
+
+
+    </style>
+
 </head>
-<style>
-  body {
-    width: 100%;
-      display: flex;
-      justify-content: center;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
-
-
-  @media (min-width: 1400px) {
-      main {
-          display: grid;
-          width: 1000px;
-          height: 1414px;
-          grid-template-columns: 38.2% 61.8%;
-          section#left > div {
-              height: 100%;
-              border: 3px solid red;
-          }
-          section#left {
-              display: grid;
-              grid-template-rows: 300px 500px 100px 300px 200px;
-              align-items: center;
-              div#me-intro {
-
-              }
-              div#contacts {
-
-                  ul {
-                      width: 100%;
-                      height: 100%;
-                      display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      flex-direction: column;
-                      li {
-                          width: 50%;
-                          border: 3px solid red;
-                      }
-                  }
-              }
-              div#education {
-              }
-          }
-      }
-
-      main > section {
-          height: 100%;
-      }
-
-      section#left {
-          background-color: lightcoral;
-      }
-
-      section#right {
-          background-color: lightblue;
-      }
-
-  }
-
-</style>
-
 <body>
 <header>
     <nav>
@@ -81,13 +106,13 @@
 <main>
     <section id="left">
         <div id="me-intro">
-            <img src="" alt="photo" class="photo">
+            <img src="me.png" alt="photo" class="photo">
             <h1>Orekhov Alexandr</h1>
         </div>
         <div id="contacts">
             <h2>Contacts</h2>
             <ul>
-                <li>+7 (xxx) xxx ** xx</li>
+                <li>+7 (xxx) xxx xx xx</li>
                 <li>gitl**@gmail.com</li>
                 <li><a href="https://web.telegram.org/" target="_blank">t.me</a></li>
                 <li><a href="https://ru.linkedin.com/" target="_blank">LinkedIn</a></li>
@@ -96,7 +121,9 @@
         </div>
         <div id="education">
             <h2>Education</h2>
-            <p><a href="https://www.kstu.kz/">KTU</a></p>
+            <ul>
+                <li><a href="https://www.kstu.kz/" target="_blank">KTU</a></li>
+            </ul>
         </div>
         <div id="languages">
             <h2>Languages</h2>
@@ -107,16 +134,108 @@
             </ul>
         </div>
         <div id="rs-logo">
-
+            <div id="logo-container">
+                <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                    <img src="rs-school-logo.svg" alt="rs logo">
+                </a>
+            </div>
         </div>
 
     </section>
     <section id="right">
+        <div id="about-me">
+            <h2>About Me!</h2>
+            <p>Hello! My name is [Your Name]. I'm passionate about technology,
+                design, and continuous learning. I enjoy building meaningful digital
+                experiences and exploring new ideas.</p>
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+            <table id="skillTable">
+                <tbody>
+                <tr><td>HTML & CSS & JS</td><td></td></tr>
+                <tr><td>Spring Boot</td><td></td></tr>
+                <tr><td>Spring Security</td><td></td></tr>
+                <tr><td>Spring Data Jpa</td><td></td></tr>
+                <tr><td>Spring Cloud</td><td></td></tr>
+                <tr><td>JUnit</td><td></td></tr>
+                <tr><td>Postgres</td><td></td></tr>
+                <tr><td>Redis</td><td></td></tr>
+                <tr><td>Git & GitHub</td><td></td></tr>
+                <tr><td>Docker</td><td></td></tr>
+                <tr><td>Kubernetes</td><td></td></tr>
+                <tr><td>System Design</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
 
     </section>
 </main>
 
 <footer>
 </footer>
+
+<script>
+
+    let points = new Map([
+        ["HTML & CSS & JS", 3],
+        ["Spring Boot", 4],
+        ["Spring Security", 4],
+        ["Spring Data Jpa", 4],
+        ["Spring Cloud", 0],
+        ["JUnit", 4],
+        ["Postgres", 4],
+        ["Redis", 4],
+        ["Git & GitHub", 3],
+        ["Docker", 5],
+        ["Kubernetes", 2],
+        ["System Design", 3]
+    ]);
+
+    star();
+
+    function star() {
+        const table = document.getElementById("skillTable");
+        const rows = table.children.item(0).children;
+        let point, row, pointCell;
+        for (let i = 0; i < rows.length; ++i) {
+            row = rows.item(i);
+            point = points.get(row.children.item(0).textContent);
+            pointCell = row.children.item(1);
+            shiftToTheRight(pointCell);
+            insertStars(pointCell, point);
+        }
+    }
+
+    function insertStars(elem, point) {
+        for (let i = 0; i < point; ++i) {
+            elem.appendChild(createFullStar());
+        }
+        for (let i = 0; i < 5 - point; ++i) {
+            elem.appendChild(createEmptyStar());
+        }
+    }
+
+    function createFullStar() {
+        const star = document.createElement("img");
+        star.setAttribute("src", "icon/star.png");
+        star.setAttribute("alt", "star");
+        star.classList.add("star-img");
+        return star;
+    }
+
+    function createEmptyStar() {
+        const star = document.createElement("img");
+        star.setAttribute("src", "icon/empty-star.png");
+        star.setAttribute("alt", "empty");
+        star.classList.add("star-img");
+        return star;
+    }
+
+    function shiftToTheRight(pointCell) {
+        pointCell.style.paddingLeft = "21px";
+    }
+</script>
 </body>
 </html>
