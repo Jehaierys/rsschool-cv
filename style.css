@@ -66,11 +66,14 @@ main section header img {
   object-fit: cover;
 }
 main section footer {
-  background: red;
   margin-top: auto;
   margin-bottom: 25px;
 }
-main section div#skills img.star-img {
+main section footer p {
+  width: 100%;
+  text-align: center;
+}
+main section div#skills img.star {
   width: 15px;
   height: 15px;
   margin-right: 3px;

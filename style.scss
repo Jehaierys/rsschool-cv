@@ -70,13 +70,17 @@ main {
       }
     }
 
-    footer {
+    footer { /* to delete */
       margin-top: auto;
       margin-bottom: 25px;
+      p {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     div#skills {
-      img.star-img {
+      img.star {
         width: 15px;
         height: 15px;
         margin-right: 3px;
