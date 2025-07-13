@@ -41,7 +41,7 @@ function createFullStar() {
     const star = document.createElement("img");
     star.setAttribute("src", "icon/star.png");
     star.setAttribute("alt", "star");
-    star.classList.add("star-img");
+    star.classList.add("star");
     return star;
 }
 
@@ -49,7 +49,7 @@ function createEmptyStar() {
     const star = document.createElement("img");
     star.setAttribute("src", "icon/empty-star.png");
     star.setAttribute("alt", "empty");
-    star.classList.add("star-img");
+    star.classList.add("star");
     return star;
 }
 
