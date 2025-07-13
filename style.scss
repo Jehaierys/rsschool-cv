@@ -50,6 +50,13 @@ main {
         height: 30px;
         width: 93%;
         margin-left: 7%;
+        a {
+          text-decoration: none;
+          transition: color 0.5s ease;
+        }
+        a:hover {
+          color: hotpink;
+        }
       }
     }
 
